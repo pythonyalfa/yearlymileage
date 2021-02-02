@@ -35,13 +35,13 @@ def  test():
     while True:
         number = eval(input("Enter mileage one way (0 to exit and calculate total): "))
         
-       
+        tot = [number]
 
-      
-     
+        for i in list(tot):
+            tot = tot + [i]
         
-        addMileage(number)
-        
+        #addMileage(number)
+        print(tot)
         if number == 0: break
                  
             
